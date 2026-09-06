@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cancer Driver Gene Mutation Report</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f4f6f8;
+        color: #2c3e50;
+        margin: 0;
+        padding: 30px;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        overflow: hidden;
+    }
+    .header {
+        background: #7B1FA2;
+        color: white;
+        padding: 25px 30px;
+    }
+    .header h1 { margin: 0 0 5px 0; font-size: 24px; }
+    .header p { margin: 0; color: #E1BEE7; font-size: 13px; }
+    .content { padding: 25px 30px; }
+    .summary {
+        background: #F3E5F5;
+        border-left: 4px solid #7B1FA2;
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th {
+        background: #9C27B0;
+        color: white;
+        text-align: left;
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 13px;
+        vertical-align: top;
+    }
+    tr.very-high { background: #FFEBEE; }
+    tr.high { background: #FFF3E0; }
+    tr.moderate { background: #FFFDE7; }
+    tr.low { background: #F5F5F5; }
+    .sev {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 3px;
+        margin-right: 8px;
+        font-size: 12px;
+    }
+    .sev-high { background: #FFCDD2; }
+    .sev-moderate { background: #FFE0B2; }
+    .sev-low { background: #DCEDC8; }
+    .sev-other { background: #E0E0E0; }
+    .disclaimer {
+        margin-top: 25px;
+        padding: 15px;
+        background: #FFF3E0;
+        border-left: 4px solid #E65100;
+        font-size: 12px;
+        color: #555;
+    }
+    .footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 11px;
+        color: #999;
+        border-top: 1px solid #eee;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cancer Driver Gene Mutation Report</h1>
+            <p>TCGA somatic mutation analysis &middot;
+               Generated September 01, 2026 at 08:09</p>
+        </div>
+        <div class="content">
+            <div class="summary">
+                <strong>30</strong> patients analyzed &middot;
+                <strong>25</strong> with driver mutations &middot;
+                <strong>66</strong> driver-gene mutations &middot;
+                <strong>16</strong> genes affected
+                <br><br>
+                Mutation severity breakdown: <span class="sev sev-high">high: 8</span> <span class="sev sev-moderate">moderate: 54</span> <span class="sev sev-low">low: 4</span> 
+            </div>
+
+            <table>
+                <tr>
+                    <th>Gene</th>
+                    <th>Patients Mutated</th>
+                    <th>Frequency</th>
+                    <th>Total Mutations</th>
+                    <th>Mutation Types</th>
+                </tr>
+                
+        <tr class="very-high">
+            <td><strong>TP53</strong></td>
+            <td>13 / 30</td>
+            <td><strong>43.3%</strong></td>
+            <td>14</td>
+            <td>13 Missense, 1 Frame Shift Del</td>
+        </tr>
+        
+        <tr class="high">
+            <td><strong>KRAS</strong></td>
+            <td>11 / 30</td>
+            <td><strong>36.7%</strong></td>
+            <td>11</td>
+            <td>11 Missense</td>
+        </tr>
+        
+        <tr class="high">
+            <td><strong>EGFR</strong></td>
+            <td>7 / 30</td>
+            <td><strong>23.3%</strong></td>
+            <td>10</td>
+            <td>8 Missense, 2 In Frame Del</td>
+        </tr>
+        
+        <tr class="moderate">
+            <td><strong>KMT2C</strong></td>
+            <td>3 / 30</td>
+            <td><strong>10.0%</strong></td>
+            <td>4</td>
+            <td>3 Missense, 1 Silent</td>
+        </tr>
+        
+        <tr class="moderate">
+            <td><strong>ARID1A</strong></td>
+            <td>3 / 30</td>
+            <td><strong>10.0%</strong></td>
+            <td>3</td>
+            <td>2 Missense, 1 Silent</td>
+        </tr>
+        
+        <tr class="moderate">
+            <td><strong>KMT2D</strong></td>
+            <td>3 / 30</td>
+            <td><strong>10.0%</strong></td>
+            <td>3</td>
+            <td>1 Silent, 1 Missense, 1 Nonsense</td>
+        </tr>
+        
+        <tr class="moderate">
+            <td><strong>KEAP1</strong></td>
+            <td>3 / 30</td>
+            <td><strong>10.0%</strong></td>
+            <td>3</td>
+            <td>2 Missense, 1 Frame Shift Del</td>
+        </tr>
+        
+        <tr class="moderate">
+            <td><strong>SMARCA4</strong></td>
+            <td>3 / 30</td>
+            <td><strong>10.0%</strong></td>
+            <td>3</td>
+            <td>1 Nonsense, 1 Missense, 1 Splice Site</td>
+        </tr>
+        
+        <tr class="moderate">
+            <td><strong>STK11</strong></td>
+            <td>3 / 30</td>
+            <td><strong>10.0%</strong></td>
+            <td>3</td>
+            <td>2 Nonsense, 1 Missense</td>
+        </tr>
+        
+        <tr class="low">
+            <td><strong>BRAF</strong></td>
+            <td>2 / 30</td>
+            <td><strong>6.7%</strong></td>
+            <td>2</td>
+            <td>2 Missense</td>
+        </tr>
+        
+        <tr class="low">
+            <td><strong>APC</strong></td>
+            <td>2 / 30</td>
+            <td><strong>6.7%</strong></td>
+            <td>2</td>
+            <td>1 Missense, 1 Frame Shift Del</td>
+        </tr>
+        
+        <tr class="low">
+            <td><strong>BRCA2</strong></td>
+            <td>2 / 30</td>
+            <td><strong>6.7%</strong></td>
+            <td>3</td>
+            <td>2 Missense, 1 Silent</td>
+        </tr>
+        
+        <tr class="low">
+            <td><strong>NF1</strong></td>
+            <td>2 / 30</td>
+            <td><strong>6.7%</strong></td>
+            <td>2</td>
+            <td>1 Missense, 1 Frame Shift Del</td>
+        </tr>
+        
+        <tr class="low">
+            <td><strong>PIK3CA</strong></td>
+            <td>1 / 30</td>
+            <td><strong>3.3%</strong></td>
+            <td>1</td>
+            <td>1 Missense</td>
+        </tr>
+        
+        <tr class="low">
+            <td><strong>ATM</strong></td>
+            <td>1 / 30</td>
+            <td><strong>3.3%</strong></td>
+            <td>1</td>
+            <td>1 Missense</td>
+        </tr>
+        
+        <tr class="low">
+            <td><strong>CDKN2A</strong></td>
+            <td>1 / 30</td>
+            <td><strong>3.3%</strong></td>
+            <td>1</td>
+            <td>1 Missense</td>
+        </tr>
+        
+            </table>
+
+            <div class="disclaimer">
+                <strong>Note:</strong> This analysis uses a curated subset of
+                well-documented cancer driver genes, not the complete COSMIC
+                Cancer Gene Census (719 genes). "Patients Mutated" counts unique
+                patients per gene &mdash; a patient with multiple mutations in the
+                same gene is counted once. Frequency percentages reflect this
+                cohort only and should not be generalized. This is an
+                educational/portfolio project, not a clinical diagnostic tool.
+            </div>
+        </div>
+        <div class="footer">
+            TCGA Cancer Variant Analysis Pipeline &mdash; Project 4
+        </div>
+    </div>
+</body>
+</html>
