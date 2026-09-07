@@ -1,11 +1,4 @@
 # report_generator.py
-# ─────────────────────────────────────────────────────────────────────────────
-# Takes the finished per-gene frequency results and writes an HTML report.
-#
-# Presentation only — this file doesn't know anything about MAF files,
-# mutation biology, or cancer genes. It just formats finished numbers.
-# Same structural pattern as Project 3's report_generator.py.
-# ─────────────────────────────────────────────────────────────────────────────
 
 import os
 from datetime import datetime
