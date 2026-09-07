@@ -1,18 +1,8 @@
 # frequency_calculator.py
-# ─────────────────────────────────────────────────────────────────────────────
+
 # Turns the raw counts from mutation_analyzer.py into the actual clinically
 # meaningful numbers: what PERCENTAGE of patients have each gene mutated.
-#
-# IMPORTANT — the denominator problem:
-# mutation_analyzer.py only ever sees FILTERED driver mutations, so its
-# 'all_patients' set can only contain patients who had at least one driver
-# mutation. Patients who were analyzed but had NO driver-gene mutations
-# would silently vanish from the denominator, inflating every percentage.
-#
-# So main.py counts the TRUE patient total from the unfiltered data and
-# passes it in via total_patients. Only falls back to stats['all_patients']
-# if no explicit total is given.
-# ─────────────────────────────────────────────────────────────────────────────
+
 
 
 def calculate_frequencies(stats, total_patients=None):
