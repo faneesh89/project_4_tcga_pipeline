@@ -46,8 +46,6 @@ def main():
     print("-" * 60)
 
     # ---- Step 2: parse all files into mutation dicts ----
-    # materialized to a list because we need to walk it twice:
-    # once to count patients, once to filter for drivers
     all_mutations = list(read_multiple_mafs(maf_files))
 
     # ---- Step 3: count the TRUE patient total, BEFORE driver filtering ----
@@ -82,7 +80,6 @@ def main():
               f"driver gene list — still counted in the denominator)")
 
     # ---- Step 6: turn counts into per-gene frequencies ----
-    # passing the TRUE total so percentages aren't inflated
     results = calculate_frequencies(
         stats, total_patients=total_patients_analyzed
     )
