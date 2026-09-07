@@ -1,5 +1,5 @@
 __pycache__/
 *.pyc
-data/*.maf.gz
 venv/
 data/*
+!data/.gitkeep
