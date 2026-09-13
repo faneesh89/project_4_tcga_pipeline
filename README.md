@@ -5,8 +5,7 @@ Genome Atlas (TCGA) to identify how frequently known cancer driver genes
 are mutated across a patient cohort.
 
 Built on real, publicly available TCGA-LUAD (Lung Adenocarcinoma) data
-downloaded from the NCI Genomic Data Commons (GDC) — not synthetic or
-toy data.
+downloaded from the NCI Genomic Data Commons (GDC) — not synthetic data.
 
 ---
 

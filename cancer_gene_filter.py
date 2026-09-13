@@ -45,10 +45,9 @@ def filter_driver_mutations(mutations):
     for mut in mutations:
         gene = mut.get('Hugo_Symbol')
         if gene in CANCER_GENES:
-            mut['gene_type'] = CANCER_GENES[gene]
+            mut['gene_type'] = CANCER_GENES['gene']
             drivers.append(mut)
     return drivers
-
 
 def get_driver_stats(stats):
     """
