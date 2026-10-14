@@ -15,6 +15,8 @@ CANCER_GENES = {
     'KEAP1':   'tumor_suppressor',
     'NF1':     'tumor_suppressor',
     'CDKN2A':  'tumor_suppressor',
+    'KMT2C':   'tumor_suppressor',
+    'KMT2D':   'tumor_suppressor',
 
     # ---- Oncogenes ----
     'KRAS':    'oncogene',
@@ -22,8 +24,6 @@ CANCER_GENES = {
     'BRAF':    'oncogene',
     'EGFR':    'oncogene',
     'NRAS':    'oncogene',
-    'KMT2C':   'oncogene',
-    'KMT2D':   'oncogene',
 }
 
 
