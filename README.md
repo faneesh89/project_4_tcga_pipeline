@@ -189,7 +189,7 @@ reflected in the separate total mutation count.
 ## Running the pipeline
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/faneesh89/project_4_tcga_pipeline
 cd project_4_tcga_pipeline
 # place .maf.gz files in data/
 python3 main.py
